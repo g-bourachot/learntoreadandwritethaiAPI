@@ -1,0 +1,4 @@
+//Launch commands
+ln -s /applications/xampp/xamppfiles/var/mysql/mysql.sock /tmp/mysql.sock
+cd /Applications/XAMPP/xamppfiles/htdocs/learntoreadawritethai
+php -S mac-de-guillaume.local:8080 -t public public/index.php
