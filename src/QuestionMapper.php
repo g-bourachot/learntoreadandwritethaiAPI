@@ -8,7 +8,7 @@ class QuestionMapper {
 	}
 
  	public function getQuestions($levelId, $limit, $answerMapper){
- 		$sql = "SELECT * FROM questions WHERE level = ".$levelId." LIMIT ".$limit;
+ 		$sql = "SELECT * FROM questions WHERE level = ".$levelId." ORDER BY RAND() LIMIT ".$limit;
     	try {
         	$stmt = $this->databaseConnection->query($sql);
         	$questions = $stmt->fetchAll(PDO::FETCH_OBJ);
