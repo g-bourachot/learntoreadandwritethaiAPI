@@ -2,6 +2,7 @@
 
 require __DIR__ . '/UserMapper.php';
 require __DIR__ . '/LevelMapper.php';
+require __DIR__ . '/LessonMapper.php';
 require __DIR__ . '/QuestionMapper.php';
 require __DIR__ . '/AnswerMapper.php';
 
