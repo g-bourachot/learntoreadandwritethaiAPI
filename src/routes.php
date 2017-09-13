@@ -46,3 +46,14 @@ $app->get('/answers/{questionId}', function ($request, $response, $args) {
 	$response->getBody()->write($mapper->getAnswers($questionId));
 });
 
+$app->get('/lessons', function ($request, $response, $args) {
+	$mapper = new LessonMapper($this->db);
+	$response->getBody()->write($mapper->getLessons());
+});
+
+$app->get('/lesson/{id}', function ($request, $response, $args) {
+	$lessonId = (int)$args['id'];
+	$mapper = new LessonMapper($this->db);
+	$response->getBody()->write($mapper->getLessonById($lessonId));
+});
+

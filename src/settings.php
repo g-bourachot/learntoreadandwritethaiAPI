@@ -19,9 +19,9 @@ return [
         //Database
         'db' => [
             'host' => 'localhost',
-            'user' => 'root',
-            'password' => '',
-            'dbname' => 'LearnToReadAndWriteThai',
+            'user' => 'root_learnthai',
+            'password' => '4Db-qaF-k59-K4q',
+            'dbname' => 'learnthai',
         ],
     ],
 ];
